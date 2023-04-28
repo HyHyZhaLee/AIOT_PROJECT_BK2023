@@ -5,8 +5,8 @@ import random
 from uart import *
 
 AIO_FEED_ID = ["temp", "humi", "light", "relay1", "relay2", "relay3", "ledbutton", "security", "doorbutton"]
-AIO_USERNAME = "lygiahuy05022002"
-AIO_KEY = "aio_pcpH55Ym7ZWAZN9xX3zRXlQpmAiy"
+AIO_USERNAME = "add user name"
+AIO_KEY = "add key"
 
 def connected(client):
     print("Ket noi thanh cong ...")
