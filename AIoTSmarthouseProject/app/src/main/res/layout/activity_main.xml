@@ -5,88 +5,438 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/logobk"/>
+        <TextView
+            android:id="@+id/txtProject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="YoloHome"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/stfloor"/>
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switch1stfloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    app:on="false"
+                    app:colorOn="#00ffff"
+                    app:colorOff="#A0A0A0"
+                    app:colorBorder="#00ffff"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="1st Floor Light"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ndfloor"/>
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switch2ndfloor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    app:on="false"
+                    app:colorOn="#00ffff"
+                    app:colorOff="#A0A0A0"
+                    app:colorBorder="#00ffff"/>
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="2nd Floor Light"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="40"
+        android:layout_weight="6"
         android:orientation="horizontal">
 
-
-        <TextView
-            android:id="@+id/txtTemperature"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#ff0000"
-            android:text="31°C"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            >
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/alllight"/>
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switchAllLight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    app:on="false"
+                    app:colorOn="#00ffff"
+                    app:colorOff="#A0A0A0"
+                    app:colorBorder="#00ffff"/>
+            </LinearLayout>
+            <TextView
 
-        </TextView>
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="All Light"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/txtHumidity"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#00ff00"
-            android:text="73%"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            >
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/stairlight"/>
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switchstairlight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    app:on="false"
+                    app:colorOn="#00ffff"
+                    app:colorOff="#A0A0A0"
+                    app:colorBorder="#00ffff"/>
+            </LinearLayout>
+            <TextView
 
-        </TextView>
-
-
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="Stair Light"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/door"/>
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switchDoor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    app:on="false"
+                    app:colorOn="#00ffff"
+                    app:colorOff="#A0A0A0"
+                    app:colorBorder="#00ffff"/>
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="Door"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/security"/>
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/switchSecurity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    app:on="false"
+                    app:colorOn="#00ffff"
+                    app:colorOff="#A0A0A0"
+                    app:colorBorder="#00ffff"/>
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="Security"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="20"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/txtMASK"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#A5D8DD"
-            android:text="MASK"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:textColor="#000000"
-            android:gravity="center"
-            android:layout_margin="20dp"
-            >
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/temp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Temperature"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
 
-        </TextView>
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtTemp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="efe"
+                android:background="#FF9999"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold">>
 
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/humidity"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Humidity"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
 
-    </LinearLayout>
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtHumidity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="efe"
+                android:background="#66FFFF"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold">>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/light"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="Light"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20">
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="20">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtLight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="efe"
+                android:background="#FFFF99"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold">>
+
+            </TextView>
+        </LinearLayout>
 
     </LinearLayout>
 
