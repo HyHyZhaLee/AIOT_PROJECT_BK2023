@@ -11,14 +11,16 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 public class MainActivity extends AppCompatActivity {
     MQTTHelper mqttHelper;
-    //TextView txtTemp, txtHumi;
+    TextView txtTemp, txtHumi, txtLight;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //txtTemp = findViewById(R.id.txtTemperature);
-        //txtHumi = findViewById(R.id.txtHumidity);
-        //xoá 2 line trên
+
+        txtTemp = findViewById(R.id.txtTemp);
+        txtHumi = findViewById(R.id.txtHumidity);
+        txtLight = findViewById(R.id.txtLight);
+
         startMQTT();
     }
 
@@ -37,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void messageArrived(String topic, MqttMessage message) throws Exception {
-
+                if(topic.contains("temp")) txtTemp.setText(message.toString()+ "°C");
+                else if(topic.contains("humi")) txtHumi.setText(message.toString() + "%");
+                else if(topic.contains("light")) txtLight.setText(message.toString() + "%");
             }
 
             @Override

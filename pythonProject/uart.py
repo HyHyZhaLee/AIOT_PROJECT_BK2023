@@ -10,7 +10,7 @@ def getPort():
         if "USB" in strPort:
             splitPort = strPort.split(" ")
             commPort = (splitPort[0])
-    return "COM9"
+    return commPort
 if getPort()!= "None":
     ser = serial.Serial( port=getPort(), baudrate=115200)
     print(ser)
@@ -44,4 +44,4 @@ def readSerial(client):
                 mess = mess[end+1:]
 
 def writeData(data):
-    ser.write((str(data) + "#").encode())
+    ser.write((str(data)).encode())

@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
+        android:layout_weight="7"
         android:orientation="horizontal"
         android:background="@drawable/border"
         android:layout_marginLeft="5dp"
@@ -51,16 +51,17 @@
                 android:layout_weight="3"
                 android:layout_height="0dp"
                 android:orientation="horizontal">
+
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="45dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:layout_margin="5dp"
-                    android:src="@drawable/stfloor"/>
+                    android:layout_weight="2"
+                    android:src="@drawable/stfloor" />
 
                 <com.github.angads25.toggle.widget.LabeledSwitch
                     android:id="@+id/switch1stfloor"
-                    android:layout_width="0dp"
+                    android:layout_width="57dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="30dp"
@@ -97,25 +98,27 @@
                 android:layout_weight="3"
                 android:layout_height="0dp"
                 android:orientation="horizontal">
+
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="18dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
                     android:layout_margin="5dp"
-                    android:src="@drawable/ndfloor"/>
+                    android:layout_weight="2"
+                    android:src="@drawable/ndfloor" />
+
                 <com.github.angads25.toggle.widget.LabeledSwitch
                     android:id="@+id/switch2ndfloor"
-                    android:layout_width="0dp"
+                    android:layout_width="28dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_weight="2"
                     android:textSize="7sp"
-                    app:on="false"
-                    app:colorOn="#00ffff"
+                    app:colorBorder="#00ffff"
                     app:colorOff="#A0A0A0"
-                    app:colorBorder="#00ffff"/>
+                    app:colorOn="#00ffff"
+                    app:on="false" />
             </LinearLayout>
             <TextView
 
@@ -247,11 +250,12 @@
                 android:layout_weight="3"
                 android:layout_height="0dp"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="86dp"
                     android:layout_weight="2"
-                    android:src="@drawable/door"/>
+                    android:src="@drawable/door" />
                 <com.github.angads25.toggle.widget.LabeledSwitch
                     android:id="@+id/switchDoor"
                     android:layout_width="0dp"
@@ -370,11 +374,10 @@
                 android:layout_margin="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="efe"
+                android:text="20*C"
                 android:textColor="#000000"
                 android:textSize="30dp"
-                android:textStyle="bold">>
-
+                android:textStyle="bold">
             </TextView>
         </LinearLayout>
         <LinearLayout
@@ -412,10 +415,10 @@
                 android:layout_margin="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="efe"
+                android:text="20%"
                 android:textColor="#000000"
                 android:textSize="30dp"
-                android:textStyle="bold">>
+                android:textStyle="bold">
 
             </TextView>
         </LinearLayout>
@@ -454,24 +457,24 @@
                 android:layout_margin="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="efe"
+                android:text="20%"
                 android:textColor="#000000"
                 android:textSize="30dp"
-                android:textStyle="bold">>
+                android:textStyle="bold">
 
             </TextView>
         </LinearLayout>
 
 
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:textStyle="normal"
         android:gravity="right|bottom"
+        android:text="Presented by The Infinity"
         android:textSize="20dp"
-        android:text="Produced by Infinity team ">
-    </TextView>
+        android:textStyle="normal"></TextView>
 
 </LinearLayout>
