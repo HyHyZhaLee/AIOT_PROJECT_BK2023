@@ -10,6 +10,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="7"
         android:orientation="horizontal"
         android:background="@drawable/border"
@@ -33,6 +38,10 @@
             android:layout_marginRight="65dp">
         </TextView>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -373,7 +382,7 @@
                 android:layout_margin="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="20*C"
+                android:text="20°C"
                 android:textColor="#000000"
                 android:textSize="30dp"
                 android:textStyle="bold">
