@@ -1,6 +1,8 @@
 # AIot Smart House Model using Yolo:bit
 This project is an AIot (Artificial Intelligence of Things) smart house model using Yolo:bit. The model includes sensors connected via serial to a Python gateway, which then connects to the IoT Adafruit server using MQTT. Additionally, an Android app has been developed using Android Studio, which also connects to the Adafruit server via MQTT.
 
+![z4320904115970_a2427061e06c9708a8fa398b7202e308](https://github.com/HyHyZhaLee/AIOT_PROJECT_BK2023/assets/113485058/f399650e-c416-46ee-93b7-3d6c1311157d)
+
 ## Hardware Requirements
 (Read pdf file for more detail)
 
